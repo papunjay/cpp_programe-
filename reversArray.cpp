@@ -1,7 +1,11 @@
 #include <bits/stdc++.h>
-printArray(int Array[],int N){
-    for(int i=0; i<N; i++){
-        cout<<Array[i]<<" ";
+using namespace std;
+void printArray(int Array[],int N)
+{
+    for(int i=0; i<N; i++)
+    {
+
+        cout <<Array[i]<<" ";
     }
 }
 void reversArray(int Array[],int start,int end){
@@ -18,11 +22,11 @@ void reversArray(int Array[],int start,int end){
 int main(){
     int N;
     int Array[1000];
-    cin>>N;
+    cin>> N;
     for(int i=0;i<N;i++)
     {
         cin>>Array[i];
     }
     reversArray(Array,0,N-1);
-    printArray(Array,N-1)
+    printArray(Array,N);
 }
